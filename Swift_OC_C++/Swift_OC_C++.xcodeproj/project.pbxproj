@@ -12,6 +12,10 @@
 		37F64CAB1EACDED2004B9530 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37F64CA91EACDED2004B9530 /* Main.storyboard */; };
 		37F64CAD1EACDED2004B9530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F64CAC1EACDED2004B9530 /* Assets.xcassets */; };
 		37F64CB01EACDED2004B9530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37F64CAE1EACDED2004B9530 /* LaunchScreen.storyboard */; };
+		37F64CBA1EACDF59004B9530 /* SwiftClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F64CB91EACDF59004B9530 /* SwiftClass.swift */; };
+		37F64CBE1EACE06C004B9530 /* TBOCClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F64CBD1EACE06C004B9530 /* TBOCClass.m */; };
+		37F64CC11EACE208004B9530 /* CClass.c in Sources */ = {isa = PBXBuildFile; fileRef = 37F64CBF1EACE208004B9530 /* CClass.c */; };
+		37F64CC31EACE378004B9530 /* CClassNo.c in Sources */ = {isa = PBXBuildFile; fileRef = 37F64CC21EACE378004B9530 /* CClassNo.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,13 @@
 		37F64CAC1EACDED2004B9530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37F64CAF1EACDED2004B9530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37F64CB11EACDED2004B9530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37F64CB91EACDF59004B9530 /* SwiftClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftClass.swift; sourceTree = "<group>"; };
+		37F64CBB1EACE06C004B9530 /* Swift_OC_C++-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift_OC_C++-Bridging-Header.h"; sourceTree = "<group>"; };
+		37F64CBC1EACE06C004B9530 /* TBOCClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBOCClass.h; sourceTree = "<group>"; };
+		37F64CBD1EACE06C004B9530 /* TBOCClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBOCClass.m; sourceTree = "<group>"; };
+		37F64CBF1EACE208004B9530 /* CClass.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CClass.c; sourceTree = "<group>"; };
+		37F64CC01EACE208004B9530 /* CClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CClass.h; sourceTree = "<group>"; };
+		37F64CC21EACE378004B9530 /* CClassNo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CClassNo.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +67,17 @@
 			children = (
 				37F64CA51EACDED2004B9530 /* AppDelegate.swift */,
 				37F64CA71EACDED2004B9530 /* ViewController.swift */,
+				37F64CB91EACDF59004B9530 /* SwiftClass.swift */,
+				37F64CBC1EACE06C004B9530 /* TBOCClass.h */,
+				37F64CBD1EACE06C004B9530 /* TBOCClass.m */,
+				37F64CBF1EACE208004B9530 /* CClass.c */,
+				37F64CC01EACE208004B9530 /* CClass.h */,
+				37F64CC21EACE378004B9530 /* CClassNo.c */,
 				37F64CA91EACDED2004B9530 /* Main.storyboard */,
 				37F64CAC1EACDED2004B9530 /* Assets.xcassets */,
 				37F64CAE1EACDED2004B9530 /* LaunchScreen.storyboard */,
 				37F64CB11EACDED2004B9530 /* Info.plist */,
+				37F64CBB1EACE06C004B9530 /* Swift_OC_C++-Bridging-Header.h */,
 			);
 			path = "Swift_OC_C++";
 			sourceTree = "<group>";
@@ -96,6 +114,7 @@
 				TargetAttributes = {
 					37F64CA11EACDED2004B9530 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,8 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37F64CBE1EACE06C004B9530 /* TBOCClass.m in Sources */,
+				37F64CC31EACE378004B9530 /* CClassNo.c in Sources */,
+				37F64CC11EACE208004B9530 /* CClass.c in Sources */,
 				37F64CA81EACDED2004B9530 /* ViewController.swift in Sources */,
 				37F64CA61EACDED2004B9530 /* AppDelegate.swift in Sources */,
+				37F64CBA1EACDF59004B9530 /* SwiftClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,10 +281,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Swift_OC_C++/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kkeye.cn.Swift-OC-C--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift_OC_C++/Swift_OC_C++-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -270,10 +296,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Swift_OC_C++/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kkeye.cn.Swift-OC-C--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift_OC_C++/Swift_OC_C++-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
